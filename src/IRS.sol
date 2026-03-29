@@ -1,7 +1,12 @@
 contract InterestBasesSwap {
 
+    uint constant BPS = 10,000;
+
+
     enum State {
-        
+        Active,
+        notActive,
+        Cancelled
     }
 
     // parties involved
@@ -18,7 +23,7 @@ contract InterestBasesSwap {
     uint256 swapDuration; // Duration of the swap  
 
     //
-    State 
+    State state; 
 
 
 
